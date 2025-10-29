@@ -85,7 +85,7 @@ function CalculadoraHuerto() {
                     >
                         <option value="">Seleccione una opción</option>
                         <option value="Canasta Familiar">Canasta Básica Familiar - $25.000</option>
-                        <option value="Venta de Insumos">Kit Huerto en Casa - $16.000</option>
+                        <option value="Kit Huerto en Casa">Kit Huerto en Casa - $16.000</option>
                         <option value="Taller para principiantes">Taller para principiantes - $5.000</option>
                     </select>
                 </div>

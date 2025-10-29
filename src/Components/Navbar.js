@@ -12,7 +12,7 @@ function Barra() {
                         width="40"
                         height="40"
                         className="d-inline-block align-top me-2"
-                    />Huerto Hogar</Navbar.Brand>
+                    /> Huerto Hogar</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">

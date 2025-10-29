@@ -1,7 +1,7 @@
 import React from "react";
 import Carousel from 'react-bootstrap/Carousel';
 
-function Carrusel() {
+function BannerPrincipal() {
     return (
         <div className='row mt-3'>
             <div className='col-lg-12'>
@@ -11,4 +11,4 @@ function Carrusel() {
     );
 }
 
-export default Carrusel;
+export default BannerPrincipal;

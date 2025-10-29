@@ -5,6 +5,8 @@ import Ban from './Components/Banner.js';
 import FooterPincipal from './Components/Footer.js';
 import ProductosDestacados from './Components/productos.js';
 import Nosotros from './Components/Nosotros.js';
+import CalculadoraHuerto from './Components/CalculadoraHuerto.js';
+import Contacto from './Components/Contacto.js';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <Ban />
         <ProductosDestacados/>
         <Nosotros/>
+        <CalculadoraHuerto/>
+        <Contacto/>
       </div>
 
       <FooterPincipal/>

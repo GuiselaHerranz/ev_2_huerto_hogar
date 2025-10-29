@@ -15,7 +15,7 @@ function CalculadoraHuerto() {
 
     // Precio según servicio
     const precioServicio =
-        servicio === "Canasta Familiar" ? 25000 : servicio === "Venta de Insumos" ? 16000 : servicio === "Taller para principiantes" ? 5000 : 0;
+        servicio === "Canasta Familiar" ? 25000 : servicio === "Kit Huerto en Casa" ? 16000 : servicio === "Taller para principiantes" ? 5000 : 0;
 
     // Precios base
     const precioMan = 1200;
@@ -85,7 +85,7 @@ function CalculadoraHuerto() {
                     >
                         <option value="">Seleccione una opción</option>
                         <option value="Canasta Familiar">Canasta Básica Familiar - $25.000</option>
-                        <option value="Venta de Insumos">Venta de Insumos - $16.000</option>
+                        <option value="Venta de Insumos">Kit Huerto en Casa - $16.000</option>
                         <option value="Taller para principiantes">Taller para principiantes - $5.000</option>
                     </select>
                 </div>

@@ -164,9 +164,3 @@ function CalculadoraHuerto() {
     );
 }
 export default CalculadoraHuerto;
-
-
-
-
-=======
->>>>>>> 93aafc57a54478f6c54bcc13baa1d02689aab520

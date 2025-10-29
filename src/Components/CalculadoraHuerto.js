@@ -10,11 +10,17 @@ function CalculadoraHuerto() {
   // Tipo de envío
   const [envio, setEnvio] = useState("");
 
+  //Tipo de servicio
+  const [servicio, setServicio] = useState("");
+
   // Precios base
   const precioMan = 1200;
   const precioNar = 1000;
   const precioZan = 900;
 
+  // Precio según servicio
+  const precioServicio =
+    servicio === "Canasta Básica frutas y verduras" ? 25000 : servicio === "Venta de Insumos" ? 16000 : servicio === "Taller para principiantes" ? 5000 : 0;
   // Calcular subtotal
   const subtotal =
     Manzana * precioMan +
@@ -26,7 +32,7 @@ function CalculadoraHuerto() {
     envio === "express" ? 4000 : envio === "Regiones" ? 2000 : envio === "Metropolitana" ? 1500 : 0;
 
   // Total final
-  const total = subtotal + costoEnvio;
+  const total = subtotal + costoEnvio + precioServicio;
 
   return (
     <div className="row mt-4">
@@ -67,9 +73,23 @@ function CalculadoraHuerto() {
           />
         </div>
 
+        <div className="form-group mt-3">
+          <label>Tipo de servicio</label>
+          <select
+            className="form-select"
+            value={servicio}
+            onChange={(e) => setServicio(e.target.value)}
+          >
+            <option value="">Seleccione una opción</option>
+            <option value="Canasta Básica frutas y verduras">Canasta Básica frutas y verduras - $25.000</option>
+            <option value="Venta de Insumos">Venta de Insumos - $16.000</option>
+            <option value="Taller para principiantes">Taller para principiantes - $5.000</option>
+          </select>
+        </div>
+
 
         <div className="form-group mt-3">
-          <label>Tipo de producto</label>
+          <label>Tipo de envio</label>
           <select
             className="form-select"
             value={envio}
@@ -116,6 +136,13 @@ function CalculadoraHuerto() {
               <td>Subtotal</td>
               <td>${subtotal.toLocaleString()}</td>
             </tr>
+
+            <tr>
+              <td>5</td>
+              <td>Servicio</td>
+              <td>${precioServicio.toLocaleString()}</td>
+            </tr>
+
             <tr>
               <td>5</td>
               <td>Envío</td>
@@ -133,3 +160,4 @@ function CalculadoraHuerto() {
 }
 
 export default CalculadoraHuerto;
+
